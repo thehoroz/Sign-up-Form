@@ -20,7 +20,7 @@
                 <p>This is not a real service!</p>
             </div>
             <div class="form">
-                <form action="" method="post">
+                <form id="myform" action="" method="post">
                     <div>
                         <label for="firstName">FIRST NAME</label>
                         <input type="text" name="firstName" id="firstName">
@@ -38,19 +38,18 @@
                         <input type="email" name="email" id="email">
                     </div>
                     <div>
-                        <label for="pwd">PASSWOD</label>
+                        <label for="pwd">PASSWORD</label>
                         <input type="password" name="pwd" id="pwd">
                     </div>
                     <div>
                         <label for="confirmpwd">CONFIRM PASSWORD</label>
                         <input type="password" name="confirmpwd" id="confirmpwd">
                     </div>
-                    <div class="btn">
-                        <button class="signup">Create Account</button>
-                        <p class="account">Already have an account? <a href="#">Log in</a></p>
-                    </div>
                 </form>
-            </div>        
+            </div>
+            <div class="btnContainer">
+                <input type="submit" form="myform" value="Create Account">
+                <p class="account">Already have an account? <a href="#">Log in</a></p>        
         </div>
     </div>
 </body>
