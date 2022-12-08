@@ -1,9 +1,30 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
 html, 
 body {
     height: 100%;
     margin: 0;
     /*overflow: hidden;*/
 }
+
+.red {
+    border: 2px dotted;
+    border-color: red;
+}
+
+@font-face {
+    font-family: dragon;
+    src: url(/Astloch-Regular.woff);
+}
+
+@font-face {
+    font-family: Julius;
+    src: url(/JuliusSansOne-Regular.woff);
+}
+
 .row {
     display: flex;
     min-height: 100%;
@@ -24,40 +45,141 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 40px;
 }
 
 .column2 > div{
-    padding: 20px;
+    padding-left: 40px;
 }
 
 .logoDiv {
-    background-color: rgba(11, 15, 19, 0.185);
+    background-color: rgba(11, 15, 19, 0.545);
     display: flex;
     width: 100%;
     height: 15%;
     align-items: center;
     justify-content: center;
-    margin-top: 35%;
-}
-
-.logoDiv > img {
-    width: 70px;
+    margin-top: 24%;
 }
 
 .logoDiv > p {
-    color: white;
+    color: rgb(255, 255, 255);
+    font-family: dragon;
+    font-size: 65px;
+    font-weight: bold;
+    padding-left: 0px;
+}
+
+.form {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+
+.heading > p {
+    font-size: 22px;
+    font-family: Julius;
+    display: block;
+    margin-bottom: 7px;
+    margin-top: 5px;
+}
+
+.form {
+    box-shadow: 2px 2px 15px rgba(125, 22, 123, 0.223);
+    background-color: rgb(255, 255, 255);
 }
 
 form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 form > div {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
+    margin-top: 20px;
+}
+
+form > div > input {
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.389);
+    border-radius: 6px;
+    height: 22px;
+}
+
+form > div > input:focus {
+    outline-style: solid;
+    outline-color: rgb(26, 96, 117);;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Julius;
+}
+
+.btnContainer {
+    flex-grow: 2;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.btnContainer > input {
+    width: 170px;
+    height: 35px;
+    border: 1px hidden black;  
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(26, 96, 117);
+    cursor: pointer;
+    transition: 2s;
+    font-family: Julius;
+}
+
+.btnContainer > input:hover {
+    color: rgb(26, 96, 117);
+    background-color: white;
+    transition: 0.5s;
+}
+
+.btnContainer > input:active {
+    scale: 0.9;
+    transition: 0.08s;
+}
+
+.account {
+    font-size: 14px;
+    font-family: Julius;
+}
+
+br {
+    display: block;
+    content: ""; 
+    margin-top: 3px; 
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(26, 96, 117);
+}
+
+.wrongPwd { 
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
 }

@@ -11,46 +11,50 @@
     <div class="row">
         <div class="column1">
             <div class="logoDiv">
-                <img src="/odin-lined.png" alt="odinlogo">
-                <p>Right then</p>
-            </div>
+                <p>Blooom</p>
+            </div> 
         </div>
         <div class="column2">
             <div class="heading">
-                <p>This is not a real service!</p>
+                <p>Blooom is not a real service <br>
+                    but you can always try to fill in the form..<br>
+                    who knows.. maybe you will win an iPhone 14 <br>
+                    <p style="color:rgba(0, 0, 0, 0.058)">Or I might sell your data - tomato tomato.</p>
             </div>
             <div class="form">
-                <form id="myform" action="" method="post">
+                <form id="myform" action="#" method="post">
                     <div>
-                        <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="firstName" id="firstName">
+                        <label for="firstName">FIRST NAME*</label>
+                        <input type="text" name="firstName" id="firstName" required>
                     </div>
                     <div>
-                        <label for="lastName">LAST NAME</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <label for="lastName">LAST NAME*</label>
+                        <input type="text" name="lastName" id="lastName" required>
                     </div>
                     <div>
                         <label for="phonenumber">PHONE NUMBER</label>
                         <input type="tel" id="phonenumber" name="phonenumber">
                     </div>
                     <div>
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <label for="email">EMAIL*</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="password">
+                        <label for="pwd">PASSWORD*</label>
+                        <input type="password" name="pwd" id="pwd" required>
+                        <span class="wrongPwd"></span>
                     </div>
                     <div>
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" name="pwd" id="pwd">
-                    </div>
-                    <div>
-                        <label for="confirmpwd">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmpwd" id="confirmpwd">
+                        <label for="confirmpwd">CONFIRM PASSWORD*</label>
+                        <input type="password" name="confirmpwd" id="confirmpwd" required>
                     </div>
                 </form>
             </div>
             <div class="btnContainer">
-                <input type="submit" form="myform" value="Create Account">
+                <input type="submit" form="myform" value="Create Account" id="createBtn">
                 <p class="account">Already have an account? <a href="#">Log in</a></p>        
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
