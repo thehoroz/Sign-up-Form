@@ -22,7 +22,7 @@ body {
 
 @font-face {
     font-family: Julius;
-    src: url(../JuliusSansOne-Regular.woff);
+    src: url(./JuliusSansOne-Regular.woff);
 }
 
 .row {
